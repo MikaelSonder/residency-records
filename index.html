@@ -5,10 +5,8 @@
 
   <title>Residency Records</title>
 
-  <meta
-    name="description"
-    content="Structured jurisdictional records relating to residency, permits, citizenship, and international immigration environments."
-  />
+  <meta name="description"
+        content="Structured jurisdictional reference records relating to lawful presence, residence continuity, work authorization environments, and cross-border mobility conditions associated with international movement between jurisdictions." />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -18,147 +16,159 @@
       box-sizing: border-box;
     }
 
+    html {
+      background: #fcfcfa;
+    }
+
     body {
       margin: 0;
       padding: 0;
-      background: #f7f7f5;
-      color: #121212;
+      background: #fcfcfa;
+      color: #161616;
       font-family: Georgia, "Times New Roman", serif;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
 
     .container {
-      max-width: 860px;
-      margin: 120px auto 120px auto;
-      padding: 0 38px;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 58px 32px 120px 32px;
     }
 
-    .header {
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #e6e6e2;
+      margin-bottom: 72px;
+    }
+
+    .series {
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #7f7f7f;
+    }
+
+    .classification {
+      font-size: 10px;
+      color: #8c8c8c;
+    }
+
+    .content {
       max-width: 640px;
-      margin-bottom: 95px;
     }
 
     h1 {
-      margin: 0 0 20px 0;
-      font-size: 62px;
+      margin: 0;
+      font-size: 44px;
       font-weight: normal;
-      letter-spacing: -1.5px;
-      line-height: 1;
+      line-height: 1.08;
+      letter-spacing: -0.9px;
+      color: #111111;
+      max-width: 520px;
     }
 
     .intro {
-      font-size: 20px;
-      line-height: 1.72;
-      color: #4c4c4c;
-    }
-
-    .section-divider {
-      border: none;
-      border-top: 1px solid #e3e3df;
-      margin: 0 0 34px 0;
-    }
-
-    .meta-label {
-      font-size: 11px;
-      letter-spacing: 1.3px;
-      text-transform: uppercase;
-      color: #7b7b7b;
-      margin-bottom: 18px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 70px;
-      margin-bottom: 95px;
-    }
-
-    .block {
-      max-width: 350px;
-    }
-
-    .block h2 {
-      margin: 0 0 18px 0;
-      font-size: 13px;
-      font-weight: normal;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: #777;
-    }
-
-    .block p {
-      margin: 0 0 18px 0;
+      margin-top: 30px;
+      max-width: 620px;
       font-size: 18px;
-      line-height: 1.82;
-      color: #1a1a1a;
+      line-height: 1.96;
+      color: #4a4a4a;
     }
 
-    .block p:last-child {
-      margin-bottom: 0;
+    .section {
+      margin-top: 78px;
     }
 
-    .editorial {
-      max-width: 640px;
-      margin-bottom: 105px;
+    .section-header {
+      font-size: 10px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: #8b8b8b;
+      margin-bottom: 14px;
     }
 
-    .editorial p {
-      margin: 0 0 16px 0;
-      font-size: 15px;
-      line-height: 1.9;
-      color: #555;
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: #e8e8e4;
+      margin-bottom: 24px;
     }
 
-    .editorial p:last-child {
-      margin-bottom: 0;
+    .section-text {
+      max-width: 620px;
+      font-size: 17px;
+      line-height: 1.95;
+      color: #242424;
     }
 
-    .navigation {
-      margin-bottom: 110px;
+    .countries {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 60px;
+      row-gap: 16px;
+      max-width: 520px;
     }
 
-    .navigation a {
+    .country a {
       text-decoration: none;
-      border-bottom: 1px solid #9a9a9a;
       color: #171717;
       font-size: 18px;
-      line-height: 1.6;
+      line-height: 1.7;
+      border-bottom: 1px solid #b7b7b2;
+      padding-bottom: 1px;
     }
 
-    .navigation a:hover {
-      border-color: #111;
+    .country a:hover {
+      border-color: #111111;
     }
 
     .footer {
-      font-size: 12px;
-      line-height: 1.85;
-      color: #707070;
+      margin-top: 120px;
+      padding-top: 18px;
+      border-top: 1px solid #e6e6e2;
+      font-size: 11px;
+      line-height: 2;
+      color: #777777;
     }
 
     @media (max-width: 760px) {
 
       .container {
-        margin: 78px auto 90px auto;
-        padding: 0 24px;
+        padding: 36px 22px 90px 22px;
+      }
+
+      .topline {
+        margin-bottom: 56px;
       }
 
       h1 {
-        font-size: 44px;
+        font-size: 34px;
+        line-height: 1.12;
       }
 
       .intro {
-        font-size: 18px;
+        font-size: 17px;
+        line-height: 1.9;
       }
 
-      .grid {
+      .section {
+        margin-top: 58px;
+      }
+
+      .countries {
         grid-template-columns: 1fr;
-        gap: 42px;
+        row-gap: 12px;
       }
 
-      .block {
-        max-width: 100%;
+      .country a {
+        font-size: 17px;
       }
+
     }
 
   </style>
@@ -168,96 +178,101 @@
 
   <div class="container">
 
-    <header class="header">
+    <div class="topline">
 
-      <h1>Residency Records</h1>
-
-      <div class="intro">
-        Structured jurisdictional records relating to residency systems, immigration procedures, permits, citizenship pathways, and cross-border administrative environments.
+      <div class="series">
+        Residency Records
       </div>
 
-    </header>
-
-    <hr class="section-divider" />
-
-    <div class="meta-label">Archive Structure</div>
-
-    <section class="grid">
-
-      <div class="block">
-
-        <h2>Function</h2>
-
-        <p>
-          The archive maintains structured jurisdictional records relating to residency frameworks, immigration procedures, citizenship pathways, and administrative filing environments across international jurisdictions.
-        </p>
-
-        <p>
-          Records are organized according to jurisdiction, procedural dependency, administrative structure, and publication classification.
-        </p>
-
+      <div class="classification">
+        Jurisdictional Mobility Reference Environment
       </div>
 
-      <div class="block">
-
-        <h2>Record Conditions</h2>
-
-        <p>
-          Entries reflect administrative conditions and procedural structures applicable at the time of publication and review.
-        </p>
-
-        <p>
-          Filing procedures, permit structures, residency conditions, documentation standards, and naturalization pathways may differ between jurisdictions.
-        </p>
-
-      </div>
-
-      <div class="block">
-
-        <h2>Coverage</h2>
-
-        <p>
-          The archive covers jurisdiction-specific environments involving residency authorization systems, immigration procedures, citizenship frameworks, permit administration, and related cross-border regulatory structures.
-        </p>
-
-      </div>
-
-      <div class="block">
-
-        <h2>Publication Continuity</h2>
-
-        <p>
-          Records may be revised, expanded, archived, or reclassified as administrative systems, procedural standards, and jurisdictional requirements evolve over time.
-        </p>
-
-      </div>
-
-    </section>
-
-    <section class="editorial">
-
-      <div class="meta-label">Editorial Scope</div>
-
-      <p>
-        The archive does not rank, certify, or evaluate professional entities. Records are maintained as structured jurisdictional references intended for administrative and comparative review.
-      </p>
-
-      <p>
-        Included materials may reference procedural conditions relating to residency authorization systems, permit structures, citizenship procedures, documentation sequencing, or administrative dependencies within defined jurisdictions.
-      </p>
-
-    </section>
-
-    <div class="navigation">
-      <a href="/records">Records</a>
     </div>
 
+    <main class="content">
+
+      <h1>
+        Residency Records
+      </h1>
+
+      <div class="intro">
+        Structured jurisdictional reference records relating to lawful presence, residence continuity, work authorization environments, and cross-border mobility conditions associated with international movement between jurisdictions.
+      </div>
+
+      <section class="section">
+
+        <div class="section-header">
+          Reference Environment
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section-text">
+
+          Residency environments are organized according to jurisdictional mobility conditions and institutional presence structures associated with cross-border settlement, employment continuity, and long-duration lawful residence.
+
+          <br /><br />
+
+          Coverage includes residence permit environments, work authorization structures, nationality continuity conditions, and institutional mobility frameworks affecting legal presence across internationally active jurisdictions.
+
+        </div>
+
+      </section>
+
+      <section class="section">
+
+        <div class="section-header">
+          Recorded Jurisdictions
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="countries">
+
+          <div class="country">
+            <a href="/united-kingdom/">
+              United Kingdom
+            </a>
+          </div>
+
+          <div class="country">
+            <a href="/germany/">
+              Germany
+            </a>
+          </div>
+
+          <div class="country">
+            <a href="/netherlands/">
+              Netherlands
+            </a>
+          </div>
+
+          <div class="country">
+            <a href="/france/">
+              France
+            </a>
+          </div>
+
+          <div class="country">
+            <a href="/switzerland/">
+              Switzerland
+            </a>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
     <footer class="footer">
-      Reference Series: International Residency Systems<br />
-      Archive Classification: Jurisdictional Residency Environment<br />
-      Record Format: Structured Administrative Reference<br />
-      Publication Status: Active<br />
-      Edition Cycle: Ongoing
+
+      Reference Series: Residency Records<br />
+      Archive Classification: Cross-Border Mobility Reference Environment<br />
+      Record Structure: Jurisdictional Residency &amp; Mobility Records<br />
+      Publication Status: Active
+
     </footer>
 
   </div>
