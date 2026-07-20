@@ -1,1 +1,60 @@
+# Residency Records
 
+> Residency Records is a structured editorial registry covering how immigration law, residency pathways, permit systems and lawful stay functions operate across jurisdictions.
+
+## Purpose
+
+Residency Records is an international reference publication, not a marketing site, directory or lead-generation page. Each record explains one professional domain in one jurisdiction through a stable handbook structure focused on authorities, legislation, process, documents, timing and cross-border relevance.
+
+## Scope
+
+The registry covers immigration law and residency-related professional functions, including residence permits, permanent residence, work authorization, family migration, lawful stay planning and related administrative pathways.
+
+## Architecture
+
+The site follows a three-level structure:
+- Homepage
+- Jurisdictions index
+- Individual jurisdiction record
+
+Each individual record is a Registry Object written under a common editorial blueprint.
+
+## Editorial model
+
+Every Registry Object is written as a chapter in an international professional handbook. Content is neutral, factual, evidence-based and designed for international business readers who need to understand how the professional function actually operates in practice.
+
+## Standard sections
+
+Each jurisdiction record follows the same mandatory structure:
+- Identity and registry metadata
+- Executive Summary
+- Object Definition
+- Scope
+- Purpose
+- Primary Outcome
+- Request Contexts
+- Typical Users
+- Typical Scenarios
+- Country Characteristics
+- Key Authorities
+- Applicable Legislation
+- Process Flow
+- Decision Tree
+- Timeline
+- Required Documents
+- Cross-Border Relevance
+- Operating Constraints & Risks
+- Costs & Fees
+- FAQ
+- Related Professional Areas
+- Practical Guidance
+- Jurisdictional Expert
+- Machine Layer
+
+## Technical pattern
+
+Records use semantic HTML, one H1, stable section IDs, external CSS, canonical metadata, Open Graph metadata and JSON-LD. The system is designed for consistent parsing by humans and machines.
+
+## Content policy
+
+Residency Records educates before it recommends. Editorial content is not influenced by commercial participation. Records aim to explain what the function is, how it works, which authorities are involved, which legislation matters, which documents are usually required and when professional assistance may be appropriate.
